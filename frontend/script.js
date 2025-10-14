@@ -5,7 +5,7 @@ let currentTurn = "X";
 
 function createGame() {
     const name = document.getElementById("playerName").value;
-    fetch("http://localhost:8000/create_game", {
+    fetch("https://real-multiplayer-tic-tae-toe-4.onrender.com", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({player_name: name})
@@ -22,7 +22,7 @@ function createGame() {
 function joinGame() {
     const name = document.getElementById("playerName").value;
     const id = document.getElementById("joinId").value;
-    fetch(`http://localhost:8000/join_game/${id}`, {
+    fetch(`https://real-multiplayer-tic-tae-toe-4.onrender.com/join_game/${id}`,{
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({player_name: name})
@@ -39,7 +39,7 @@ function joinGame() {
 }
 
 function connectWebSocket() {
-    ws = new WebSocket(`ws://localhost:8000/ws/${gameId}`);
+    ws = new WebSocket(`wss://real-multiplayer-tic-tae-toe-4.onrender.com/ws/${gameId}`);
     ws.onmessage = (event) => {
         const data = JSON.parse(event.data);
         if (data.action === "start") {
