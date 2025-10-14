@@ -47,7 +47,6 @@ This project is designed to be **mobile-friendly** and **deployable**, allowing 
 --- 
 
 ## 🧠 Game Architecture Overview
-
 Player 1 (X)       Player 2 (O)
      ↓                   ↓
    ┌───────────────────────────┐
