@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🎮 Multiplayer Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🎮 Multiplayer Tic-Tac-Toe</h1>
+
+    <div id="menu">
+        <input type="text" id="playerName" placeholder="Enter your name">
+        <button onclick="createGame()">Create Game</button>
+        <input type="text" id="joinId" placeholder="Enter Game ID">
+        <button onclick="joinGame()">Join Game</button>
+        <p id="gameIdText"></p>
+    </div>
+
+    <div id="gameBoard" class="hidden">
+        <div class="info-panel">
+            <h3 id="currentPlayer">Current Player: </h3>
+            <h3 id="youPlayBy">You play by: </h3>
+            <h3 id="infoText">Info: Waiting for opponent...</h3>
+        </div>
+
+        <div class="board" id="board"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
