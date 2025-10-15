@@ -121,9 +121,11 @@ Player 1 (X)       Player 2 (O)
 - Communication: JSON-based WebSocket protocol
 
 ---
-## ⚡ Run Demo (Locally)
+## ⚡ Run Demo (Locally) & Online
 - Start backend: uvicorn main:app --reload
 
 - Open frontend/index.html in two browser windows.
 
 - Play real-time multiplayer Tic-Tac-Toe.
+
+- Deployed Link:-  https://prismatic-kitsune-3852d5.netlify.app/
