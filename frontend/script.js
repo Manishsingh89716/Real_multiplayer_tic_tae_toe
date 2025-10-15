@@ -5,7 +5,7 @@ let currentTurn = "X";
 
 function createGame() {
     const name = document.getElementById("playerName").value;
-    fetch("https://real-multiplayer-tic-tae-toe-4.onrender.com", {
+    fetch("https://real-multiplayer-tic-tae-toe-4.onrender.com/create_game", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({player_name: name})
